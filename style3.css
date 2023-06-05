@@ -1,0 +1,57 @@
+.navbar-brand{
+    font-weight: 550;
+    letter-spacing: 0.2px;
+    margin-right: auto; /* Push the brand/logo to the left */
+}
+
+
+body{
+    background-color: rgb(178, 213, 244);
+}
+
+
+.navbar{
+    background-color: aliceblue;
+    width: 100%;
+    color: #000;
+}
+
+footer{
+    background-color: aliceblue;
+    width: 100%;
+    margin-top: 50%;
+    height: 23rem;
+    
+}
+
+h1{
+    text-align: center;
+    margin-top: 45%;
+	font-weight: 750;
+    letter-spacing: 0.2px;
+}
+  
+  .nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav li {
+    display: inline-block;
+    margin-left: 10px; /* Add some spacing between the navigation items */
+  }
+  
+  /* fieldset{
+    width:600px;
+    height: 600px;
+    color: rgb(0, 0, 0);
+    box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.3);
+    margin-top: 50%;
+    float: center;
+    margin-left: 20%;
+    background-color: rgb(208, 228, 246);
+  }
+   */
+  
+

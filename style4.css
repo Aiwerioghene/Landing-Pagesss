@@ -1,0 +1,78 @@
+
+body{
+    background-color:rgb(42, 2, 79);
+}
+
+.navbar{
+    background-color:rgb(30, 7, 30);
+    font-weight:600;
+    color: rgb(255, 255, 255);
+    text-align: center;
+   justify-items: center;
+    
+}
+
+
+   .btn{
+    background-color: chartreuse;
+    margin-top: 5em;
+    margin-left: 70em; 
+    color: black;
+   }
+
+   .btn:hover{
+    background-color:darkorchid;
+    color: white;
+   }
+
+   h1{
+    margin-top: 20%;
+	font-weight: 550;
+    letter-spacing: 1.5px;
+    color: white;
+   }
+
+   p{
+    color: white;
+    letter-spacing: 1.2px;
+    font-weight: 100;
+   }
+
+   fieldset{
+    background-color:rgb(212, 44, 100);
+    width: 25em;
+    height: 25em;
+    margin-top: -240px;
+    margin-left: 40em; 
+    border-radius: 130px ;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    font-style: italic;
+   
+   }
+
+   h2,
+   .sign{
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-top: 2em;
+   
+   }
+   .btnn{
+    background-color: chartreuse;
+    color: black;
+    width: 6rem;
+    height: 2.5rem;
+    border-radius: 7px;
+    margin-top: 1.5rem;
+   }
+
+   .btnn:hover{
+    background-color:darkorchid;
+    color: white;
+   }
+
+   
+   
