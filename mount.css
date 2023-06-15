@@ -1,0 +1,31 @@
+a{
+    color: rgb(36, 35, 35);
+    font-weight: 300;
+    font-size: small;
+}
+
+.btn{
+    border-radius: 20px;
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    font-weight: 700;
+    font-size: small;
+    color: blueviolet;
+    background-color: azure;
+    box-shadow: -2px -2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    padding: 10px;
+}
+
+.overlay h2 {
+     font-size: 24px;
+     margin: 0;
+}
