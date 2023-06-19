@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .birthday-message {
+      animation: fadeIn 3s;
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      color:rgb(0, 0, 0);
+      font-family: 'Times New Roman', Times, serif;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
+    }
+
+    section{
+        height: fit-content;
+        background-image: linear-gradient(to bottom right, rgb(224, 169, 229), rgb(144, 233, 255));
+        box-shadow: -6px -6px 6px rgba(0, 0, 0, 0.5);
+        border-radius: 10px;
+    }
+
+    .message {
+  overflow: hidden;
+}
+
+.slide-in {
+  animation: slideInAnimation 1s forwards;
+  opacity: 0;
+}
+
+@keyframes slideInAnimation {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="birthday-message">
+        <section>
+            <br>
+            <div class="message">
+                <h2 class="slide-in" style=" font-size: 40px; font-weight: 700;">Happy birthday baby! ❤️</h2>
+              </div>
+              <br>
+      <p>Have an amazing day today!</p>
+      <p>Grateful for you every day. 💗</p>
+      <p>Thank you for all you've done these past few months we've been together. You've been an amazing boyfriend and friend too. 🫶🏾 Wouldn't want to lose what we have.
+      Happy to have such an amazing person like you in my life<3</p>
+      <p>Happy to have such an amazing person in my life. It's crazy how I was able to find someone like you. 😭</p>
+      <p>I'm so proud of you, really proud of all your effort you put into work. (My very own tech boyfriend. 😏)</p>
+      <p>Thank you for all your love and care. Thanks for tolerating me and my silly complaints. 😂 Thanks for the laughs and joy.</p>
+      <p>Wouldn't trade any of the memories we've made for anything! ✨💘</p>
+      <p>I pray God grants you all your heart desires. You deserve every good thing life has to offer. ✨</p>
+      <p>Cheers to more life, more money, more gigs. 🤭</p>
+      <br>
+      <p>Sad I won't be able to spend your special day with you, but make the most of it. ✨🫶🏾</p>
+      <p>I hope you have the ABSOLUTE BEST DAY! ❤️ Because you deserve it.</p>
+      <p>Happy birthday, sweetheart. 🥺💘💘</p>
+      <p>Genaga loves you so, so much. ❤️</p>
+      <p>- Love, your Avocado/girlfriend. 🥑 💗</p>
+      <br>
+    </section>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.birthday-message').fadeIn(1000);
+    });
+  </script>
+</body>
+
+</html>

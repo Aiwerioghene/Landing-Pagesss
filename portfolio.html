@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+  <title>Sign Up</title>
+ 
+</head>
+<body>
+    <style>
+        body{
+            background-image: linear-gradient( #2f80ff, #3ccbff );
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;    
+        }
+
+        article{
+            height: 27rem;
+            width: 30rem;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 6px 6px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+           
+        }
+
+      
+        #username,
+        #email,
+        #password{
+            width: 17rem;
+            height:2.5rem;
+            margin-bottom: 1rem;
+            border-left:none ;
+            border-radius: 0;
+            border-color: rgb(193, 193, 193);
+            align-items: center;
+            
+        }
+
+        .input-group-text{
+        border-radius: 0; 
+        border-top-color:   rgb(193, 193, 193);
+        border-bottom-color:   rgb(193, 193, 193);
+        border-left-color:   rgb(193, 193, 193);
+        border-right: none;
+        background-color: white;
+       
+    }
+           
+
+
+       
+    .input-group-text i {
+      padding-right: 2px;
+      position: relative;
+      top: 2px;
+    }
+
+    .input-group-prepend{
+        height: 2.5rem;
+        border:   rgb(193, 193, 193);
+
+    }
+    </style>
+
+  <article>
+  <h1>Sign Up</h1>
+  <form onsubmit="generateVerificationCode(event)">
+<br>
+<br>
+<br>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+        <span class="input-group-text">
+          <i class="bi bi-person"></i> <!-- User icon -->
+        </span>
+        <input type="text" class="form-control" placeholder="Username" id="username" required>
+      </div>
+    </div> 
+    <br>
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+        <span class="input-group-text">
+          <i class="bi bi-envelope"></i> <!-- Email icon -->
+        </span>
+        <input type="text" class="form-control" placeholder="Email" id="email" name="email">
+      </div>
+    </div>
+    <br>
+      
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+        <span class="input-group-text">
+            <i class="bi bi-lock"></i> <!-- Password icon -->
+        </span>
+        <input type="text" class="form-control" placeholder="Password" id="password" name="email">
+      </div>
+      </div>
+
+      <br>
+      <button type="button" class="btn btn-primary">Sign Up</button>
+      
+</article>
+  
+
+  <!-- <script> -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<script>
+    function generateVerificationCode(event) {
+      event.preventDefault();
+
+      var username = document.getElementById("username").value;
+      var email = document.getElementById("email").value;
+      var password = document.getElementById("password").value;
+
+      // Generate a random verification code (6 digits)
+      var verificationCode = Math.floor(100000 + Math.random() * 900000);
+
+      // Store the user details and verification code in session storage
+      sessionStorage.setItem("username", username);
+      sessionStorage.setItem("email", email);
+      sessionStorage.setItem("password", password);
+      sessionStorage.setItem("verificationCode", verificationCode);
+
+      // Display the verification code as an alert
+      alert("Verification code: " + verificationCode);
+
+      // Redirect to the login page
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>

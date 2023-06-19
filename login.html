@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+</head>
+<body>
+  <h1>Login</h1>
+  <form onsubmit="validateCode(event)">
+    <label for="verificationCode">Verification Code:</label>
+    <input type="text" id="verificationCode" required>
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+  
+  <script>
+    function validateCode(event) {
+      event.preventDefault();
+      
+      var enteredCode = document.getElementById("verificationCode").value;
+      var storedCode = sessionStorage.getItem("verificationCode");
+      
+      if (enteredCode === storedCode) {
+        alert("Access granted! You are now logged in.");
+        // Redirect to the main page or perform any other actions
+      } else {
+        alert("Invalid verification code. Please try again.");
+      }
+    }
+  </script>
+</body>
+</html>

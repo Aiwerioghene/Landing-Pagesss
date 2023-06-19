@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Parallax Website</title>
+  <style>
+    /* Set the height of the sections */
+    section {
+      height: 100vh;
+    }
+
+    /* Set background images and parallax effect */
+    .parallax-section {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
+
+    /* Add content to the sections */
+    .section-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      font-size: 24px;
+    }
+
+    /* Style the individual sections */
+    #section1 {
+      background-image: url('images/moun.jpg');
+    }
+
+    #section2 {
+      background-image: url('images/gradient2.JPG');
+    }
+
+    #section3 {
+      background-image: url('images/IMG_4508.JPG');
+    }
+  </style>
+</head>
+<body>
+  <section id="section1" class="parallax-section">
+    <div class="section-content">
+      <h1>Section 1</h1>
+      <p>This is the content of section 1.</p>
+    </div>
+  </section>
+
+  <section id="section2" class="parallax-section">
+    <div class="section-content">
+      <h1>Section 2</h1>
+      <p>This is the content of section 2.</p>
+    </div>
+  </section>
+
+  <section id="section3" class="parallax-section">
+    <div class="section-content">
+      <h1>Section 3</h1>
+      <p>This is the content of section 3.</p>
+    </div>
+  </section>
+
+  <script>
+    // Parallax scrolling effect
+    window.addEventListener('scroll', function() {
+      const parallaxSections = document.getElementsByClassName('parallax-section');
+
+      for (let i = 0; i < parallaxSections.length; i++) {
+        const section = parallaxSections[i];
+        const offset = window.pageYOffset;
+        const yPos = -(offset * 0.4);
+        section.style.backgroundPosition = `center ${yPos}px`;
+      }
+    });
+  </script>
+</body>
+</html>
